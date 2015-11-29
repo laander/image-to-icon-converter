@@ -1,0 +1,19 @@
+{
+  "name": "image-to-icon-converter",
+  "version": "1.0.0",
+  "description": "API wrapper for Iconfinder's icon converter (png/jpg/gif to icns/ico)",
+  "main": "main.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Lasse Boisen Andersen <la@laander.com> (http://laander.com)",
+  "license": "MIT",
+  "dependencies": {
+    "is-stream": "^1.0.1",
+    "request": "^2.67.0",
+    "request-promise": "^1.0.2"
+  },
+  "devDependencies": {
+    "jasmine": "^2.3.2"
+  }
+}
