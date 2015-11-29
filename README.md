@@ -3,6 +3,7 @@
 > Convert images (png/jpg/gif) to icons (icns/ico)
 
 This is an unoffical node wrapper for Iconfinder's icon converter utility found here: http://labs.iconfinder.com/converter
+It uploads an image file through their API, they do their magic and you get an icon file back. Simple.
 
 ## Features
 
@@ -13,7 +14,7 @@ This is an unoffical node wrapper for Iconfinder's icon converter utility found 
 
 ## Installation
 
-`npm install iconfinder-converter`
+`npm install image-to-icon-converter`
 
 ## Usage
 

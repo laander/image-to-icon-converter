@@ -1,7 +1,7 @@
 {
   "name": "image-to-icon-converter",
   "version": "1.0.0",
-  "description": "API wrapper for Iconfinder's icon converter (png/jpg/gif to icns/ico)",
+  "description": "Convert images (png/jpg/gif) to icons (icns/ico) with Iconfinder's Converter",
   "main": "main.js",
   "scripts": {
     "test": "jasmine"
