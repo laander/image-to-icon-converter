@@ -17,16 +17,41 @@ This is an unoffical node wrapper for Iconfinder's icon converter utility found 
 
 ## Usage
 
-Upload file, conver it and get download URL:
+Upload file from disk, convert it and get download URL:
 
 ```javascript
-var converter = require('../main.js');
-
+var converter = require('image-to-icon-converter');
 var file = __dirname + '/image.png';
 
-converter.uploadConvertDownload(file)
+converter.uploadConvertDownload(file, 'icns')
   .then(function(result) {
     // result is a URL to the resulting icon file
     console.log(result)
   });
-``
+```
+
+If you supply it with a stream, it will return a stream too:
+
+```javascript
+var converter = require('image-to-icon-converter');
+var fs = require('fs');
+var stream = fs.createReadStream(__dirname + '/image.png');
+
+converter.uploadConvertDownload(stream, 'icns')
+  .then(function(result) {
+    // result is a stream of the icns file
+    result.pipe(fs.createWriteStream('icon.icns'));
+  });
+```
+
+You can also call each of methods individually (returns promises):
+
+```javascript
+var converter = require('image-to-icon-converter');
+
+converter.uploadStream(fileStream);
+converter.uploadFile(pathToFile);
+converter.convert(urlToFile, iconType);
+converter.downloadFile(convertResult);
+converter.downloadStream(convertResult);
+```
