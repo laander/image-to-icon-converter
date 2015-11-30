@@ -2,8 +2,13 @@
 
 > Convert images (png/jpg/gif) to icons (icns/ico)
 
-This is an unoffical node wrapper for Iconfinder's icon converter utility found here: http://labs.iconfinder.com/converter
-It uploads an image file through their API, they do their magic and you get an icon file back. Simple.
+This is a simple, unoffical node wrapper for Iconfinder's icon converter utility found here: http://labs.iconfinder.com/converter
+
+**Why?**  
+Converting image files to the .icns format is surprisingly difficult to do programmatically on anything else than OSX (using Xcode). You got 'iconutil', 'sips' and 'libicns', but they are OSX only which leaves you in the dust when you want it to work on a linux webserver. Last resort are the myriad of online converters stuck in the 90s (and none of them have an API).
+
+**How?**  
+Upload an image file through Iconfinder's API, they do their magic and you get an icon file back. Simple.
 
 ## Features
 
