@@ -1,6 +1,6 @@
 {
   "name": "image-to-icon-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert images (png/jpg/gif) to icons (icns/ico) with Iconfinder's Converter",
   "main": "main.js",
   "scripts": {
